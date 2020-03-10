@@ -24,5 +24,9 @@ def directors_totals(nds)
   index = 0
   while index < nds.count do
     director = nds[index][:name]
+
+    # loop through all their movies and sum the revenue 
+    inner_index = 0
+    while
   end
 end
