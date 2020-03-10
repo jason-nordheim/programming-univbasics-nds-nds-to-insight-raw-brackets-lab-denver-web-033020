@@ -36,7 +36,7 @@ def directors_totals(nds)
     end
 
     # add the sum of all movie revenue to the the hashmap for that director
-    result[director] => worldwide_gross
+    result[director] = worldwide_gross
     index += 1
   end
   return result
