@@ -32,7 +32,8 @@ def directors_totals(nds)
     while inner_index < nds[:movies].count do
       gross_sales = nds[:movies][inner_index][:worldwide_gross]
       worldwide_gross += gross_sales
-      inner_index += 1 
+      inner_index += 1
     end
+    result[director] => worldwide_gross
   end
 end
