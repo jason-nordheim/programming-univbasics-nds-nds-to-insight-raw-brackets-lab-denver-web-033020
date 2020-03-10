@@ -26,7 +26,7 @@ def directors_totals(nds)
 
     # loop through all their movies and sum the revenue
     inner_index = 0
-    while inner_index < nds[:movies].count do
+    while inner_index < nds[index][:movies].count do
       gross_sales = nds[:movies][inner_index][:worldwide_gross]
       worldwide_gross += gross_sales
       inner_index += 1
@@ -41,5 +41,4 @@ def directors_totals(nds)
   return result
 end
 
-dd_totals = directors_totals(directors_database)
-pp dd_totals
+directors_totals(directors_database)
