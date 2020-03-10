@@ -22,7 +22,6 @@ def directors_totals(nds)
   while index < nds.count do
     # get the first director
     director = nds[index][:name]
-    puts director
     worldwide_gross = 0
 
     # loop through all their movies and sum the revenue
@@ -32,6 +31,8 @@ def directors_totals(nds)
       worldwide_gross += gross_sales
       inner_index += 1
     end
+    puts director
+    puts worldwide_gross
 
     # add the sum of all movie revenue to the the hashmap for that director
     result[director] = worldwide_gross
