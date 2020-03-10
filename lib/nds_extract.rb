@@ -35,5 +35,6 @@ def directors_totals(nds)
       inner_index += 1
     end
     result[director] => worldwide_gross
+    index += 1 
   end
 end
