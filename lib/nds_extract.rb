@@ -23,6 +23,7 @@ def directors_totals(nds)
   # Be sure to return the result at the end!
   index = 0
   while index < nds.count do
+    # get the first director 
     director = nds[index][:name]
 
     # loop through all their movies and sum the revenue 
